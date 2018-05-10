@@ -9,9 +9,18 @@ class TestBracketsBalancer(unittest.TestCase):
         result = BracketsBalancer.Balance(brackets)
         # Assert
         self.assertEqual(result, "")
+
     def test_Balance_GivenOneSetOfBalancedBrackets_ShouldReturnOK(self):
         # Arrange
         brackets = "[]"
+        # Act
+        result = BracketsBalancer.Balance(brackets)
+        # Assert
+        self.assertEqual(result, "OK")
+    
+    def test_Balance_GivenTwoSetsOfBalancedBrackets_ShouldReturnOK(self):
+        # Arrange
+        brackets = "[][]"
         # Act
         result = BracketsBalancer.Balance(brackets)
         # Assert

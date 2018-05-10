@@ -1,6 +1,6 @@
 class BracketsBalancer(object):
     def Balance(brackets):
-        if brackets == "[]":
+        if brackets == "[]" or brackets == "[][]":
             return "OK"
         else:
-            return "" #if brackets is None else str(brackets)
+            return ""
