@@ -21,7 +21,7 @@ class TestBracketsBalancer(unittest.TestCase):
             self.assertEqual(result, "OK")
 
     def test_Balance_GivenUnBalancedBrackets_ShouldReturnFAIL(self):
-        balancedBrackets = ["]["]
+        balancedBrackets = ["][", "][][", "[][]]["]
         for bracket in balancedBrackets:
             # Arrange
             brackets = bracket
