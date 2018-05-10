@@ -10,18 +10,14 @@ class TestBracketsBalancer(unittest.TestCase):
         # Assert
         self.assertEqual(result, "")
 
-    def test_Balance_GivenOneSetOfBalancedBrackets_ShouldReturnOK(self):
-        # Arrange
-        brackets = "[]"
-        # Act
-        result = BracketsBalancer.Balance(brackets)
-        # Assert
-        self.assertEqual(result, "OK")
+    def test_Balance_GivenBalancedBrackets_ShouldReturnOK(self):
+        balancedBrackets = ["[]","[][]","[[]]"]
+        for bracket in balancedBrackets:
+            # Arrange
+            brackets = bracket
+            # Act
+            result = BracketsBalancer.Balance(brackets)
+            # Assert
+            self.assertEqual(result, "OK")
     
-    def test_Balance_GivenTwoSetsOfBalancedBrackets_ShouldReturnOK(self):
-        # Arrange
-        brackets = "[][]"
-        # Act
-        result = BracketsBalancer.Balance(brackets)
-        # Assert
-        self.assertEqual(result, "OK")
+    
