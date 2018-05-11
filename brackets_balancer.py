@@ -1,10 +1,10 @@
-from conditions import Condition
+from conditions import BracketsAre
 
 class BracketsBalancer(object):
     def Balance(brackets):        
-        if Condition.BracketsAreBalanced(brackets):
+        if BracketsAre.Balanced(brackets):
             return "OK"
-        elif Condition.BracketsAreUnbalanced(brackets):
+        elif BracketsAre.Unbalanced(brackets):
             return "FAIL"
         else:
             return ""
