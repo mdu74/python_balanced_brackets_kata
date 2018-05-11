@@ -1,8 +1,10 @@
+from conditions import Condition
+
 class BracketsBalancer(object):
     def Balance(brackets):        
-        if brackets.startswith("[") and brackets.endswith("]"):
+        if Condition.BracketsAreBalanced(brackets):
             return "OK"
-        elif brackets.startswith("]") and brackets.endswith("[") or brackets.startswith("[") and brackets.endswith("["):
+        elif Condition.BracketsAreUnbalanced(brackets):
             return "FAIL"
         else:
             return ""
