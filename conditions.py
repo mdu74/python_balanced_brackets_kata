@@ -1,4 +1,4 @@
-class BracketsAre(object):
+class BracketsAre():
     def Balanced(brackets):
         return brackets.startswith("[") and brackets.endswith("]")
     

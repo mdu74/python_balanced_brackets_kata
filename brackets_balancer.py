@@ -1,6 +1,6 @@
 from conditions import BracketsAre
 
-class BracketsBalancer(object):
+class BracketsBalancer():
     def Balance(brackets):        
         if BracketsAre.Balanced(brackets):
             return "OK"
